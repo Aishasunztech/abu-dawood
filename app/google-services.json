@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556216759307",
+    "firebase_url": "https://abu-dawood.firebaseio.com",
+    "project_id": "abu-dawood",
+    "storage_bucket": "abu-dawood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556216759307:android:c09e5a15a507765a4e030e",
+        "android_client_info": {
+          "package_name": "com.sunztech.abudawood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556216759307-87ihs6id87aipkro5b5v6nac7hohn2ba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6jbW9YIE36h3N4grBMvHupg5AAEIsErY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556216759307-87ihs6id87aipkro5b5v6nac7hohn2ba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
