@@ -19,8 +19,8 @@ android {
         applicationId "com.sunztech.abudawood"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 4
-        versionName "1.4"
+        versionCode 5
+        versionName "1.5"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [
                 onesignal_app_id: '3e767dc8-bd30-420e-a3c3-a45b113b1993',
