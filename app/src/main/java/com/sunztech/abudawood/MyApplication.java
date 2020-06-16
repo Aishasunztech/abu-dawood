@@ -5,10 +5,8 @@ import android.app.Application;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
-import com.crashlytics.android.Crashlytics;
 import com.onesignal.OneSignal;
 
-import io.fabric.sdk.android.Fabric;
 
 public class MyApplication extends Application {
 
@@ -20,7 +18,6 @@ public class MyApplication extends Application {
 
 
         super.onCreate();
-        Fabric.with(this, new Crashlytics());
         // OneSignal Initialization
         OneSignal.startInit(this)
                 .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
