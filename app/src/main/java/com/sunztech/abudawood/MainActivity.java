@@ -6,6 +6,7 @@ import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -93,6 +94,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        new Handler().postDelayed(() -> {
+            Intent mainIntent = new Intent(MainActivity.this, StaticAddActivity.class);
+            startActivity(mainIntent);
+        }, 500);
 
     }
 
