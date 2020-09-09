@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.content.ContextCompat;
 
+import android.content.pm.ActivityInfo;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -78,6 +80,10 @@ public class HadithDetailsActivity extends AppCompatActivity implements UpdateBo
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hadith_details);
         ButterKnife.bind(this);
+
+        if(android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
 
         hadithItems = AppConstants.CURRENT_HADITH_LIST;
         currentIndex = getIntent().getIntExtra(AppConstants.CURRENT_HADITH,0);

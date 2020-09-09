@@ -8,10 +8,12 @@
     <string name="sahih_bukhari">Abu Dawood</string>
     <string name="app_title">Abu Dawood</string>
 
-<!--    &lt;!&ndash;    Testing Ids&ndash;&gt;-->
-<!--    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>-->
-<!--    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>-->
-<!--    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>-->
+<!--    Testing Ids-->
+<!--
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+-->
 
     <!--    Real Ids-->
     <string name="app_id">ca-app-pub-9166385430984549~2631032032</string>

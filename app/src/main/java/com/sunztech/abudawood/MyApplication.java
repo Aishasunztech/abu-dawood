@@ -5,14 +5,24 @@ import android.app.Application;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
+import com.onesignal.OneSignal;
+
+
 public class MyApplication extends Application {
 
     public static int numberOfClicks = 1;
 
     @Override
     public void onCreate() {
-        super.onCreate();
 
+
+
+        super.onCreate();
+        // OneSignal Initialization
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
         // register to be informed of activities starting up
         registerActivityLifecycleCallbacks(new ActivityLifecycleCallbacks() {
 
